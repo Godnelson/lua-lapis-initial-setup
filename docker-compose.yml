@@ -1,0 +1,9 @@
+services:
+  lua:
+    build: .
+    stdin_open: true
+    tty: true
+    volumes:
+      - "./:/app"
+    ports:
+      - "8080:8080"
